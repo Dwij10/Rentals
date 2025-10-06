@@ -1,17 +1,22 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "autoname": "autoincrement",
  "creation": "2025-10-03 16:11:03.882135",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "make",
   "year",
   "color",
-  "column_break_seim",
+  "column_break_nrfq",
   "model",
-  "license_plate"
+  "license_plate",
+  "is_published",
+  "route",
+  "vehicle_image"
  ],
  "fields": [
   {
@@ -37,10 +42,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_seim",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "model",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -51,12 +52,40 @@
    "fieldname": "license_plate",
    "fieldtype": "Data",
    "label": "License Plate"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nrfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach",
+   "label": "Vehicle Image"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-05 18:18:14.630613",
+ "modified": "2025-10-06 17:43:54.712466",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -76,8 +105,11 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }
