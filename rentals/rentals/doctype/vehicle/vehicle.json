@@ -12,6 +12,8 @@
   "year",
   "color",
   "insuarance_expiry",
+  "get_summary",
+  "summary",
   "column_break_nrfq",
   "model",
   "license_plate",
@@ -98,6 +100,16 @@
    "fieldname": "condition",
    "fieldtype": "Rating",
    "label": "Condition"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
   }
  ],
  "grid_page_length": 50,
@@ -105,7 +117,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-07 15:05:27.979151",
+ "modified": "2025-10-09 18:09:34.753352",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
