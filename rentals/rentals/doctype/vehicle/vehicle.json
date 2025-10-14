@@ -17,6 +17,7 @@
   "column_break_nrfq",
   "audit_completed",
   "model",
+  "type",
   "license_plate",
   "is_published",
   "route",
@@ -118,6 +119,12 @@
    "fieldtype": "Check",
    "label": "Audit Completed?",
    "permlevel": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "grid_page_length": 50,
@@ -125,7 +132,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-14 14:44:44.263326",
+ "modified": "2025-10-14 18:12:02.512501",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
