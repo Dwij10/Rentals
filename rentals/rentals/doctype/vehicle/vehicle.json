@@ -15,6 +15,7 @@
   "get_summary",
   "summary",
   "column_break_nrfq",
+  "audit_completed",
   "model",
   "license_plate",
   "is_published",
@@ -110,6 +111,13 @@
    "fieldname": "get_summary",
    "fieldtype": "Button",
    "label": "Get Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed?",
+   "permlevel": 1
   }
  ],
  "grid_page_length": 50,
@@ -117,7 +125,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-09 18:09:34.753352",
+ "modified": "2025-10-14 14:44:44.263326",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -133,6 +141,35 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Manager",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
    "share": 1,
    "write": 1
   }
